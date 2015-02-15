@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<weapons>
+  <weapon>
+    <id>1</id>
+    <name>普通子弹</name>    
+    <coolDown>0.1</coolDown>
+    
+  </weapon>
+  <weapon>
+		<id>2</id>
+		<name>黄金弓</name>
+		<coolDown>0.2</coolDown>
+    
+	</weapon>
+  <weapon>
+    <id>3</id>
+    <name>激光炮台</name>
+    <coolDown>0.8</coolDown>
+    
+  </weapon> 
+</weapons>

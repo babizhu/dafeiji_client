@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<enemys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <enemy>
+    <id>1</id>
+    <name>小飞机</name>
+    <prefab>enemy1</prefab>
+    <hp>100</hp>
+    <speed>1</speed>
+    <attackDamage>30</attackDamage>
+  </enemy>
+</enemys>

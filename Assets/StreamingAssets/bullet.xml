@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<arrows>
+  <arrow>
+    <id>1</id>
+    <name>常规子弹</name>
+    <prefab>bullet1</prefab>
+    <attack>10</attack>
+    <speed>1</speed>
+
+  </arrow>
+
+  <arrow>
+		<id>2</id>
+		<name>黄金箭</name>
+		<prefab>arrow2</prefab>
+		<attack>25</attack>
+		<speed>10</speed>
+    
+	</arrow>
+
+  <arrow>
+    <id>3</id>
+    <name>榴弹炮</name>
+    <prefab>bomb1</prefab>
+    <attack>80</attack>
+    <speed>5</speed>
+    
+  </arrow>
+  
+  <!--<weapon>
+		<id>2</id>
+		<name>激光炮</name>
+		<prefab>magicBomb</prefab>
+    <attack>100</attack>
+    <speed>10</speed>
+    <posX>0</posX>
+    <posY>0</posY>
+	</weapon>-->
+</arrows>
