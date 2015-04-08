@@ -13,11 +13,11 @@ public class NormalEnemy : AbstractEnemy {
 
     void Start()
     {
-        material = gameObject.renderer.material;    
+        material = gameObject.GetComponent<Renderer>().material;    
         healthBar = GetComponentInChildren<HealthBar>();
-        MaxHp =  Hp = 100;
+        //MaxHp =  Hp = 100;
 
-       Speed = Random.Range(3, 6);
+       //Speed = Random.Range(3, 6);
        scoreManager = GameObject.Find("score").GetComponent<ScoreManager>();
     }
 	
@@ -25,11 +25,14 @@ public class NormalEnemy : AbstractEnemy {
 	void FixedUpdate () {
         Vector3 pos = transform.position;
         pos.y -= Speed* Time.deltaTime;
+        
         if (pos.y < -5.46f)
         {
-            pos.y = 6.09f;
-            pos.x = Random.Range(-2.68f,2.68f);
+            //pos.y = 6.09f;
+            //pos.x = Random.Range(-2.68f,2.68f);
+            Destroy(gameObject);
         }
+         
         transform.position = pos;
 	}
 
@@ -42,6 +45,7 @@ public class NormalEnemy : AbstractEnemy {
      
         
             pos.y = 6.09f;
+            pos.x = Random.Range(-2.68f, 2.68f);
             transform.position = pos;
             MaxHp += 10;
             Hp = MaxHp;
@@ -49,6 +53,8 @@ public class NormalEnemy : AbstractEnemy {
         //Destroy(gameObject);
         Sound.getInstance().play(explosionSound);
         scoreManager.addNumber(3);
+
+        
         //enemyDestroy();
     }
 

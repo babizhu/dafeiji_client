@@ -9,6 +9,7 @@ public class EnemyTemplet {
     private float speed;
     private string prefab;
     private int attackDamage;
+    private int score;
 
 
     public int Id
@@ -44,5 +45,11 @@ public class EnemyTemplet {
     {
         set { attackDamage = value; }
         get { return attackDamage; }
+    }
+
+    public int Score
+    {
+        set { score = value; }
+        get { return score; }
     }
 }

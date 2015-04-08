@@ -9,9 +9,10 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         GameCamera gc = Camera.main.GetComponent<GameCamera>();
-        realDevHeighBorder = gc.realDevHeight - renderer.bounds.extents.y;
-        realDevWidthBorder = 3.2f - renderer.bounds.extents.x;
-
+        realDevHeighBorder = gc.top - GetComponent<Renderer>().bounds.extents.y;
+        //realDevWidthBorder = gc.right - GetComponent<Renderer>().bounds.extents.x;
+        //realDevHeighBorder = gc.realDevHeight - GetComponent<Renderer>().bounds.extents.y;
+        realDevWidthBorder = gc.left - GetComponent<Renderer>().bounds.extents.x;
         //print("realDevWidth=" + gc.realDevWidth + " realDevWidthBorder="+realDevWidthBorder);
         
 
@@ -104,7 +105,7 @@ public class Player : MonoBehaviour {
         {
             pos.x = -realDevWidthBorder;
         }
-        if (pos.x > realDevWidthBorder)
+        else if (pos.x > realDevWidthBorder)
         {
             pos.x = realDevWidthBorder;
         }
@@ -113,7 +114,7 @@ public class Player : MonoBehaviour {
         {
             pos.y = -realDevHeighBorder;
         }
-        if (pos.y > realDevHeighBorder)
+        else if (pos.y > realDevHeighBorder)
         {
             pos.y = realDevHeighBorder;
         }

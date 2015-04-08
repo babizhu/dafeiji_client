@@ -210,6 +210,7 @@ public class BulletSpawn : MonoBehaviour {
                     eulerAngles.z = baseAngle + i * anglePerBullet;
 
                     GameObject go = Instantiate(bullet, transform.position, Quaternion.Euler(0, 0, eulerAngles.z)) as GameObject;
+                    //go.tag
 
                 }
                 yield return new WaitForSeconds(coldDown / 1.5f);

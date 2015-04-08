@@ -6,13 +6,67 @@
     <name>教学关卡1</name>
     <wave>
       <delaySecond>1</delaySecond>
-      <monster>1,3,0</monster>
-      <!--怪物id,出现的行,x轴的偏移量-->
+      <enemy>1,-1.9,1</enemy>
+      <enemy>1,-0.3,1</enemy>
+      <enemy>1,1.3,1</enemy>
+      <!--怪物id,x轴的位置,y轴的位置-->
     </wave>
     <wave>
       <delaySecond>2</delaySecond>
-      <monster>1,4,0</monster>
-      <monster>1,2,0</monster>
+      <enemy>2,2.1,1</enemy>
+      <enemy>1,1.6,1</enemy>
+    </wave>
+    <wave>
+      <delaySecond>1</delaySecond>
+      <enemy>1,-1.9,1</enemy>
+      <enemy>1,-0.3,1</enemy>
+      <enemy>1,1.3,1</enemy>
+      <!--怪物id,x轴的位置,y轴的位置-->
+    </wave>
+    <wave>
+      <delaySecond>1</delaySecond>
+      <enemy>1,-1,1</enemy>
+      <enemy>1,1,1</enemy>
+      <!--怪物id,x轴的位置,y轴的位置-->
+    </wave>
+    <wave>
+      <delaySecond>1</delaySecond>
+      <enemy>1,-1,1</enemy>
+      <enemy>1,0.6,1</enemy>
+      <enemy>1,2.2,1</enemy>
+      <!--怪物id,x轴的位置,y轴的位置-->
+    </wave>
+    <wave>
+      <delaySecond>1</delaySecond>
+      <enemy>1,-1.9,1</enemy>
+      <enemy>1,-0.3,1</enemy>
+      <enemy>1,1.3,1</enemy>
+      <!--怪物id,x轴的位置,y轴的位置-->
+    </wave>
+    <wave>
+      <delaySecond>2</delaySecond>
+      <enemy>2,2.1,1</enemy>
+      <enemy>1,1.6,1</enemy>
+    </wave>
+    <wave>
+      <delaySecond>1</delaySecond>
+      <enemy>1,-1.9,1</enemy>
+      <enemy>1,-0.3,1</enemy>
+      <enemy>1,1.3,1</enemy>
+      <!--怪物id,x轴的位置,y轴的位置-->
+    </wave>
+    <wave>
+      <delaySecond>1</delaySecond>
+      <enemy>1,-1,1</enemy>
+      <enemy>1,1,1</enemy>
+      <!--怪物id,x轴的位置,y轴的位置-->
+    </wave>
+    <wave>
+      <delaySecond>1</delaySecond>
+      <enemy>1,-1,1</enemy>
+      <enemy>1,0.6,1</enemy>
+      <enemy>1,2.2,1</enemy>
+      <!--怪物id,x轴的位置,y轴的位置-->
     </wave>
   </mission>
 </missions>

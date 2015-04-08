@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 #if NETFX_CORE &&　UNITY_METRO && !UNITY_EDITOR 
-using WinRTLegacy.Xml;
 //using WinRTLegacy.Xml;
+//using WinRTLegacy.Xml;
+using System.Xml;
 #else
 using System.Xml;
 
@@ -72,8 +73,9 @@ public class WeaponTempletConfig {
         }
         finally
         {
-            if (reader != null)
-                reader.Close();
+            //if (reader != null)
+            //    reader.Close();
+
         }
     }
 

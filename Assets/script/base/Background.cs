@@ -15,7 +15,7 @@ public class Background : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        height = bg.renderer.bounds.size.y;
+        height = bg.GetComponent<Renderer>().bounds.size.y;
         Vector3 pos = Vector3.zero;
         pos.y = -height;
         for (int i = 0; i < bgs.Length; i++)

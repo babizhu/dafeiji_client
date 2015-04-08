@@ -9,7 +9,7 @@ public class AbstractBoss : AbstractEnemy {
     private ScoreManager scoreManager;
     
 	void Start () {
-        material = gameObject.renderer.material;
+        material = gameObject.GetComponent<Renderer>().material;
         //player = GameObject.Find("player").GetComponent<Player>();
         healthBar = GetComponentInChildren<HealthBar>();
 

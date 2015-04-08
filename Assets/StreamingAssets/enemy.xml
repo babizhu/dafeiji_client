@@ -2,10 +2,20 @@
 <enemys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <enemy>
     <id>1</id>
-    <name>小飞机</name>
-    <prefab>enemy1</prefab>
+    <name>小飞机1</name>
     <hp>100</hp>
-    <speed>1</speed>
+    <prefab>enemy1</prefab>    
     <attackDamage>30</attackDamage>
+    <speed>3</speed>
+    <score>3</score>
+  </enemy>
+  <enemy>
+    <id>2</id>
+    <name>小飞机2</name>
+    <hp>100</hp>
+    <prefab>enemy2</prefab>
+    <attackDamage>30</attackDamage>
+    <speed>4</speed>
+    <score>3</score>
   </enemy>
 </enemys>

@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 //using System.Collections;
 #if NETFX_CORE &&　UNITY_METRO && !UNITY_EDITOR 
-using WinRTLegacy.Xml;
+//using WinRTLegacy.Xml;
+using System.Xml;
 //using WinRTLegacy.Xml;
 #else
 using System.Xml;
@@ -74,8 +75,8 @@ public class BulletTempletConfig {
         }
         finally
         {
-            if (reader != null)
-                reader.Close();
+            //if (reader != null)
+              //  reader.Close();
         }
 
         }

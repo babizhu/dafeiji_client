@@ -3,12 +3,15 @@ using System.Collections;
 
 public class GameCamera : MonoBehaviour {
 
+    //主界面上下左右的边界数值
+    public float top, bottom, left, right;
+
     public float realDevHeight, realDevWidth;
-    float devHeight = 9.6f;
-     float devWidth = 6.4f;
+    //private float devHeight = 9.6f;
+    public float devWidth = 6.4f;
 	// Use this for initialization
 	void Awake () {
-	float screenHeight = Screen.height;
+	//float screenHeight = Screen.height;
 
         //Debug.Log ("screenHeight = " + screenHeight);
 
@@ -25,11 +28,17 @@ public class GameCamera : MonoBehaviour {
         if (realDevWidth < devWidth)
         {
             realDevHeight = devWidth / (2 * aspectRatio);
-            Debug.Log("new orthographicSize = " + realDevHeight);
+            //Debug.Log("new orthographicSize = " + realDevHeight);
             this.GetComponent<Camera>().orthographicSize = realDevHeight;
         }
 
         //print("realDevHeight=" + realDevHeight + ",devWidth=" + realDevWidth);
+
+        top = realDevHeight;
+        bottom = -top;
+
+        left = devWidth / 2;
+        right = -left;
 	}
 	
 	// Update is called once per frame

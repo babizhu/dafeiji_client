@@ -1,7 +1,8 @@
 ﻿
 using UnityEngine;
 #if NETFX_CORE &&　UNITY_METRO && !UNITY_EDITOR 
-using WinRTLegacy.Xml;
+//using WinRTLegacy.Xml;
+using System.Xml;
 //using WinRTLegacy.Xml;
 #else
 using System.Xml;
@@ -62,23 +63,26 @@ public class EnemyTempletCfg
                 EnemyTemplet t = new EnemyTemplet();
                 reader.ReadToFollowing("id");
                 t.Id = reader.ReadElementContentAsInt();
+                reader.ReadToFollowing("name");
+                t.Name = reader.ReadElementContentAsString();
                 reader.ReadToFollowing("hp");
                 t.Hp = reader.ReadElementContentAsInt();
                 reader.ReadToFollowing("prefab");
                 t.Prefab = reader.ReadElementContentAsString();
-                reader.ReadToFollowing("name");
-                t.Name = reader.ReadElementContentAsString();
+                
                 reader.ReadToFollowing("attackDamage");
                 t.AttackDamage = reader.ReadElementContentAsInt();
                 reader.ReadToFollowing("speed");
                 t.Speed = reader.ReadElementContentAsFloat();
+                reader.ReadToFollowing("score");
+                t.Score = reader.ReadElementContentAsInt();
                 data.Add(t.Id, t);
             }
         }
         finally
         {
-            if (reader != null)
-                reader.Close();
+           // if (reader != null)
+               // reader.Close();
         }
 
 

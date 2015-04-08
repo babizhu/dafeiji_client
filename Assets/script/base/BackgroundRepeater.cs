@@ -14,7 +14,7 @@ public class BackgroundRepeater : MonoBehaviour {
         GameCamera gc = Camera.main.GetComponent<GameCamera>();
         realDevHeight = gc.realDevHeight;
        
-        SpriteRenderer spriteRenderer = renderer as SpriteRenderer;
+        SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
         spriteHeight = spriteRenderer.sprite.bounds.size.y;
         newPosition = transform.position;
 
